@@ -40,3 +40,48 @@
     letter-spacing: 5px;
   }
 }
+
+@media (max-width: 992px) and (min-width: 676px) {
+  .landingLogoContainer {
+    height: 50vh;
+    width: 100vw;
+
+    .text {
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    .photography {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 676px) {
+  .landingLogoContainer {
+    height: 50vh;
+    width: 100vw;
+
+    .camera {
+      height: 500px;
+      width: 500px;
+    }
+
+    .text {
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100vw;
+    }
+
+    .magClark {
+      font-size: 2.5em;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+
+    .photography {
+      text-align: center;
+      letter-spacing: 3px;
+    }
+  }
+}

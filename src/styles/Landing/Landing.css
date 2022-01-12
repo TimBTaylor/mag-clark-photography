@@ -13,4 +13,13 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+@media (max-width: 992px) {
+  .landingContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=Landing.css.map */

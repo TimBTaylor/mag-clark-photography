@@ -47,4 +47,45 @@
   margin: 0;
   letter-spacing: 5px;
 }
+
+@media (max-width: 992px) and (min-width: 676px) {
+  .landingLogoContainer {
+    height: 50vh;
+    width: 100vw;
+  }
+  .landingLogoContainer .text {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .landingLogoContainer .photography {
+    text-align: center;
+  }
+}
+
+@media (max-width: 676px) {
+  .landingLogoContainer {
+    height: 50vh;
+    width: 100vw;
+  }
+  .landingLogoContainer .camera {
+    height: 500px;
+    width: 500px;
+  }
+  .landingLogoContainer .text {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 100vw;
+  }
+  .landingLogoContainer .magClark {
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  .landingLogoContainer .photography {
+    text-align: center;
+    letter-spacing: 3px;
+  }
+}
 /*# sourceMappingURL=LandingLogo.css.map */

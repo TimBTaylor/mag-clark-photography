@@ -8,3 +8,9 @@ body {
     url(./fonts/dream-avenue-modern-classic/Dream\ Avenue.ttf)
       format("truetype");
 }
+
+@font-face {
+  font-family: "Alta";
+  src: local("Alta"),
+    url(./fonts/Alta_Typeface/Alta_light.otf) format("opentype");
+}
