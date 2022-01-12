@@ -21,6 +21,23 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.LandingLinksContainer .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -38,8 +55,8 @@
   position: absolute;
   top: -20px;
   left: -20px;
-  height: 200px;
-  width: 350px;
+  height: 250px;
+  width: 375px;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='40' ry='40' stroke='%23333' stroke-width='5' stroke-dasharray='1%2c 15' stroke-dashoffset='26' stroke-linecap='square'/%3e%3c/svg%3e");
   border-radius: 40px;
   -webkit-transform: rotate(180deg);
@@ -53,5 +70,97 @@
   background: none;
   border: none;
   letter-spacing: 8px;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.LandingLinksContainer .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.LandingLinksContainer .facebookLogoContainer {
+  position: absolute;
+  bottom: -80px;
+  right: 45%;
+}
+
+.LandingLinksContainer .instagramLogoContainer {
+  position: absolute;
+  bottom: -80px;
+  left: 45%;
+}
+
+.LandingLinksContainer .facebookLogo,
+.LandingLinksContainer .instagramLogo {
+  height: 100px;
+  width: 100px;
+}
+
+@media (max-width: 992px) and (min-width: 676px) {
+  .LandingLinksContainer {
+    height: 50vh;
+    width: 100vw;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .LandingLinksContainer .buttons {
+    height: 275px;
+    width: 450px;
+  }
+  .LandingLinksContainer .backgroundContainer {
+    height: 200px;
+    width: 350px;
+  }
+  .LandingLinksContainer .btn {
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 676px) and (min-width: 450px) {
+  .LandingLinksContainer {
+    height: 50vh;
+    width: 100vw;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .LandingLinksContainer .buttons {
+    height: 225px;
+    width: 400px;
+  }
+  .LandingLinksContainer .backgroundContainer {
+    height: 175px;
+    width: 325px;
+  }
+  .LandingLinksContainer .btn {
+    letter-spacing: 5px;
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .LandingLinksContainer {
+    height: 50vh;
+    width: 100vw;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .LandingLinksContainer .buttons {
+    height: 200px;
+    width: 300px;
+  }
+  .LandingLinksContainer .backgroundContainer {
+    height: 150px;
+    width: 275px;
+    left: -15px;
+    top: -15px;
+  }
+  .LandingLinksContainer .btn {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=LandingLinks.css.map */

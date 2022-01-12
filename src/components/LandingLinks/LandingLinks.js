@@ -8,10 +8,40 @@ export const LandingLinks = () => {
     <div className="LandingLinksContainer">
       <div className="btnContainer">
         <div className="backgroundContainer"></div>
-        <button className="btn">pricing</button>
-        <button className="btn">portfolio</button>
-        <button className="btn">about</button>
-        <button className="btn">contact</button>
+        <div className="buttons">
+          <button className="btn">pricing</button>
+          <button className="btn">portfolio</button>
+          <button className="btn">about</button>
+          <button className="btn">contact</button>
+        </div>
+        <div className="facebookLogoContainer">
+          <a
+            href="https://www.facebook.com/maggie.clark.75685"
+            className="link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={FacebookLogo}
+              className="facebookLogo"
+              alt="facebook logo"
+            />
+          </a>
+        </div>
+        <div className="instagramLogoContainer">
+          <a
+            href="https://www.instagram.com/magclarkphotography/?hl=en"
+            className="link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={InstagramLogo}
+              className="instagramLogo"
+              alt="instagram logo"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

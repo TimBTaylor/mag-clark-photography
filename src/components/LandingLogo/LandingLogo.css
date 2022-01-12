@@ -69,8 +69,8 @@
     width: 100vw;
   }
   .landingLogoContainer .camera {
-    height: 500px;
-    width: 500px;
+    height: 450px;
+    width: 450px;
   }
   .landingLogoContainer .text {
     left: 50%;
@@ -86,6 +86,17 @@
   .landingLogoContainer .photography {
     text-align: center;
     letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 450px) {
+  .landingLogoContainer {
+    height: 50vh;
+    width: 100vw;
+  }
+  .landingLogoContainer .camera {
+    height: 350px;
+    width: 350px;
   }
 }
 /*# sourceMappingURL=LandingLogo.css.map */
