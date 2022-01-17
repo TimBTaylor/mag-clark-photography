@@ -2,6 +2,7 @@ import React from "react";
 import "./LandingLinks.css";
 import FacebookLogo from "../../images/facebookLogo.svg";
 import InstagramLogo from "../../images/instagramLogo.svg";
+import { Link } from "react-router-dom";
 
 export const LandingLinks = () => {
   return (
@@ -9,7 +10,9 @@ export const LandingLinks = () => {
       <div className="btnContainer">
         <div className="backgroundContainer"></div>
         <div className="buttons">
-          <button className="btn">pricing</button>
+          <Link to="/pricing">
+            <button className="btn">pricing</button>
+          </Link>
           <button className="btn">portfolio</button>
           <button className="btn">about</button>
           <button className="btn">contact</button>

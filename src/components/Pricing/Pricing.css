@@ -1,0 +1,122 @@
+/* pricing header container styles */
+.pricingHeaderContainer {
+  height: 20vh;
+  width: 100vw;
+  background-color: #c2b19c;
+  text-align: center;
+}
+
+.pricingHeaderContainer .logoContainer {
+  background-color: #c2b19c;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.pricingHeaderContainer .logoContainer .camera {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: -55px;
+  left: -45px;
+}
+
+.pricingHeaderContainer .logoContainer .text {
+  position: absolute;
+  top: 33px;
+  left: 50px;
+  width: auto;
+  z-index: 2;
+}
+
+.pricingHeaderContainer .logoContainer .magClark {
+  font-family: "Dream Avenue";
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.1em;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.pricingHeaderContainer .logoContainer .photography {
+  font-family: "Lexend Tera", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.pricingHeaderContainer .pricing {
+  margin-top: 10vh;
+  font-family: "Alta";
+  letter-spacing: 7px;
+  font-size: 2rem;
+}
+
+@media (max-width: 992px) {
+  .pricingHeaderContainer .logoContainer .camera {
+    height: 150px;
+    width: 150px;
+    top: -35px;
+    left: -30px;
+  }
+  .pricingHeaderContainer .logoContainer .text {
+    top: 28px;
+    left: 40px;
+  }
+  .pricingHeaderContainer .logoContainer .magClark {
+    font-size: 0.9em;
+    letter-spacing: 3px;
+  }
+  .pricingHeaderContainer .logoContainer .photography {
+    font-size: 0.5em;
+    letter-spacing: 1px;
+  }
+}
+
+/* pricing body styles */
+.pricingBodyContainer {
+  width: 100vw;
+  height: 80vh;
+  background-color: #c2b19c;
+}
+
+.pricingBodyContainer .couplesAndFamilyContainer,
+.pricingBodyContainer .seniorAndMaternityContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricingBodyContainer .pricingBodySquareContainer {
+  background-color: #94857b;
+  height: 265px;
+  width: 415px;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 45px;
+}
+/*# sourceMappingURL=Pricing.css.map */
