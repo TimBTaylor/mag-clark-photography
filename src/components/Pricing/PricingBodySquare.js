@@ -9,15 +9,18 @@ export const PricingBodySquare = (props) => {
   const images = props.images;
   return (
     <div className="pricingBodySquareContainer">
-      <div className="pricingInfo">
-        <h1 className="type">{type}</h1>
-        <h1 className="time">
-          {time} {timeType}
-        </h1>
-        <h1 className="images">{images} images</h1>
-      </div>
-      <div className="priceContainer">
-        <h1 className="price">{price}</h1>
+      <div className="pricingBackgroundContainer"></div>
+      <div className="pricingInfoContainer">
+        <div className="pricingInfo">
+          <h1 className="type">{type}</h1>
+          <h1 className="time">
+            {time} {timeType}
+          </h1>
+          <h1 className="images">{images} images</h1>
+        </div>
+        <div className="priceContainer">
+          <h1 className="price">{price}</h1>
+        </div>
       </div>
     </div>
   );
