@@ -14,7 +14,9 @@ export const LandingLinks = () => {
             <button className="btn">pricing</button>
           </Link>
           <button className="btn">portfolio</button>
-          <button className="btn">about</button>
+          <Link to="/about">
+            <button className="btn">about</button>
+          </Link>
           <button className="btn">contact</button>
         </div>
         <div className="facebookLogoContainer">

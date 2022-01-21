@@ -1,0 +1,126 @@
+/* about header styles */
+
+.aboutHeaderContainer {
+  height: 20vh;
+  width: 100vw;
+  background-color: #c2b19c;
+  text-align: center;
+
+  .logoContainer {
+    background-color: #c2b19c;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .camera {
+      transform: rotate(360deg);
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      top: -55px;
+      left: -45px;
+    }
+
+    .text {
+      position: absolute;
+      top: 33px;
+      left: 50px;
+      width: auto;
+      z-index: 2;
+    }
+
+    .magClark {
+      font-family: "Dream Avenue";
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 1.1em;
+      padding: 0;
+      margin: 0;
+      letter-spacing: 4px;
+    }
+
+    .photography {
+      font-family: "Lexend Tera", sans-serif;
+      text-transform: uppercase;
+      font-size: 0.6em;
+      font-weight: 100;
+      padding: 0;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+  }
+
+  .about {
+    margin-top: 10vh;
+    font-family: "Alta";
+    letter-spacing: 7px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutHeaderContainer {
+    .logoContainer {
+      .camera {
+        height: 150px;
+        width: 150px;
+        top: -35px;
+        left: -30px;
+      }
+
+      .text {
+        top: 28px;
+        left: 40px;
+      }
+
+      .magClark {
+        font-size: 0.9em;
+        letter-spacing: 3px;
+      }
+
+      .photography {
+        font-size: 0.5em;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+/* about body styles */
+.aboutBodyContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #c2b19c;
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+
+  .portrait {
+    position: absolute;
+    left: 0;
+    transform: translateY(-200px);
+  }
+
+  .aboutTextContainer {
+    margin-top: 50px;
+    height: 450px;
+    width: 700px;
+    background-color: #94857b;
+    padding: 25px 65px;
+    border-radius: 40px;
+    .welcome {
+      font-family: "Alta";
+      letter-spacing: 6px;
+      margin-left: 15%;
+    }
+
+    .text {
+      text-align: center;
+      font-family: "Alta";
+      letter-spacing: 5px;
+      font-size: 1.8em;
+      margin-top: 30px;
+    }
+  }
+}
