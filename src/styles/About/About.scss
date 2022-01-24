@@ -5,7 +5,8 @@
   width: 100vw;
   background-color: #c2b19c;
   text-align: center;
-
+  display: flex;
+  flex-direction: column;
   .logoContainer {
     background-color: #c2b19c;
     position: relative;
@@ -98,14 +99,16 @@
 
   .portrait {
     position: absolute;
-    left: 0;
-    transform: translateY(-200px);
+    border-radius: 50%;
+    height: 225px;
+    width: 225px;
+    transform: translateY(-130px) translateX(-130px);
   }
 
   .aboutTextContainer {
     margin-top: 50px;
     height: 450px;
-    width: 700px;
+    width: 600px;
     background-color: #94857b;
     padding: 25px 65px;
     border-radius: 40px;
@@ -121,6 +124,104 @@
       letter-spacing: 5px;
       font-size: 1.8em;
       margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 992px) and (min-width: 676px) {
+  .aboutBodyContainer {
+    .aboutTextContainer {
+      height: 375px;
+      width: 525px;
+      padding-bottom: 45px;
+
+      .welcome {
+        letter-spacing: 5px;
+        font-size: 1.8em;
+      }
+
+      .text {
+        letter-spacing: 4px;
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) and (min-width: 730px) {
+  .aboutBodyContainer {
+    .aboutTextContainer {
+      .portrait {
+        height: 175px;
+        width: 175px;
+        transform: translateY(-85px) translateX(-100px);
+      }
+    }
+  }
+}
+
+@media (max-width: 730px) and (min-width: 676px) {
+  .aboutBodyContainer {
+    .portrait {
+      height: 150px;
+      width: 150px;
+      transform: translateY(-65px) translateX(-75px);
+    }
+  }
+}
+
+@media (max-width: 676px) and (min-width: 500px) {
+  .aboutBodyContainer {
+    .aboutTextContainer {
+      height: 375px;
+      width: 450px;
+      padding: 25px 10px 0px 10px;
+
+      .portrait {
+        height: 150px;
+        width: 150px;
+        transform: translateY(-90px) translateX(-15px);
+      }
+
+      .welcome {
+        font-size: 1.5em;
+        margin-left: 30%;
+      }
+
+      .text {
+        font-size: 1.3em;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutBodyContainer {
+    overflow-x: scroll;
+    .aboutTextContainer {
+      height: 350px;
+      width: 325px;
+      padding: 25px 10px 0px 10px;
+
+      .portrait {
+        height: 125px;
+        width: 125px;
+        transform: translateY(-75px) translateX(-20px);
+      }
+
+      .welcome {
+        font-size: 1.3rem;
+        letter-spacing: 5px;
+        margin-left: 33%;
+      }
+
+      .text {
+        font-size: 1.1em;
+        margin-top: 0;
+        letter-spacing: 3px;
+        line-height: 23px;
+      }
     }
   }
 }
