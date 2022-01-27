@@ -15,7 +15,7 @@ export const PricingHeader = () => {
           </Link>
         </div>
       </div>
-      <h1 className="pricing">Pricing</h1>
+      <h1 className="pricing">Pricin</h1>
     </div>
   );
 };
