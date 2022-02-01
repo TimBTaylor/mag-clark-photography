@@ -1,11 +1,11 @@
 import React from "react";
-import { AboutHeader } from "../components/About/AboutHeader";
 import { AboutBody } from "../components/About/AboutBody";
+import { Header } from "../components/Header/Header";
 
 export const About = () => {
   return (
     <div className="aboutPageContainer">
-      <AboutHeader />
+      <Header title="about" />
       <AboutBody />
     </div>
   );

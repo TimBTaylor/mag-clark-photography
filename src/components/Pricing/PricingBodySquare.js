@@ -1,5 +1,5 @@
 import React from "react";
-import "./Pricing.css";
+import "../../styles/Pricing/Pricing.css";
 
 export const PricingBodySquare = (props) => {
   const type = props.type;

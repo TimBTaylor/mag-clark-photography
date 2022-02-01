@@ -1,11 +1,12 @@
 import React from "react";
 import Camera from "../../images/camera.svg";
 import { Link } from "react-router-dom";
-import "../../styles/Contact/ContactStyles.css";
+import "../../styles/Header/HeaderStyles.css";
 
-export const ContactHeader = () => {
+export const Header = (props) => {
+  const title = props.title;
   return (
-    <div className="contactHeaderContainer">
+    <div className="headerContainer">
       <div className="logoContainer">
         <img src={Camera} alt="camera" className="camera" />
         <div className="text">
@@ -15,12 +16,7 @@ export const ContactHeader = () => {
           </Link>
         </div>
       </div>
-      <h1
-        className="contact
-"
-      >
-        contact
-      </h1>
+      <h1 className="title">{title}</h1>
     </div>
   );
 };

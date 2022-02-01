@@ -1,11 +1,11 @@
 import React from "react";
-import { PricingHeader } from "../components/Pricing/PricingHeader";
 import { PricingBody } from "../components/Pricing/PricingBody";
+import { Header } from "../components/Header/Header";
 
 export const Pricing = () => {
   return (
     <div>
-      <PricingHeader />
+      <Header title="pricing" />
       <PricingBody />
     </div>
   );

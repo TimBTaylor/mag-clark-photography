@@ -1,8 +1,8 @@
 import React from "react";
-import "./LandingLinks.css";
 import FacebookLogo from "../../images/facebookLogo.svg";
 import InstagramLogo from "../../images/instagramLogo.svg";
 import { Link } from "react-router-dom";
+import "../../styles/Landing/LandingLinks.css";
 
 export const LandingLinks = () => {
   return (

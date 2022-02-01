@@ -1,5 +1,5 @@
 import React from "react";
-import "./LandingLogo.css";
+import "../../styles/Landing/LandingLogo.css";
 import Camera from "../../images/camera.svg";
 
 export const LandingLogo = () => {

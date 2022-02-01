@@ -1,5 +1,5 @@
 import React from "react";
-import "./Pricing.css";
+import "../../styles/Pricing/Pricing.css";
 import { PricingBodySquare } from "./PricingBodySquare";
 
 export const PricingBody = () => {
