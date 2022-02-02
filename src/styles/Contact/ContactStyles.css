@@ -1,1 +1,130 @@
-/* No CSS *//*# sourceMappingURL=ContactStyles.css.map */
+/* contact body styles */
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #c2b19c;
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+}
+
+.contactContainer .portrait {
+  position: absolute;
+  border-radius: 50%;
+  height: 225px;
+  width: 225px;
+  -webkit-transform: translateY(-130px) translateX(-130px);
+          transform: translateY(-130px) translateX(-130px);
+}
+
+.contactContainer .contactTextContainer {
+  margin-top: 50px;
+  height: 450px;
+  width: 600px;
+  background-color: #94857b;
+  padding: 25px 65px;
+  border-radius: 40px;
+}
+
+.contactContainer .contactTextContainer .welcome {
+  font-family: "Alta";
+  letter-spacing: 6px;
+  margin-left: 15%;
+}
+
+.contactContainer .contactTextContainer .text {
+  text-align: center;
+  font-family: "Alta";
+  letter-spacing: 5px;
+  font-size: 1.8em;
+  margin-top: 30px;
+}
+
+@media (max-width: 992px) and (min-width: 676px) {
+  .contactContainer .contactTextContainer {
+    height: 375px;
+    width: 525px;
+    padding-bottom: 45px;
+  }
+  .contactContainer .contactTextContainer .welcome {
+    letter-spacing: 5px;
+    font-size: 1.8em;
+  }
+  .contactContainer .contactTextContainer .text {
+    letter-spacing: 4px;
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 730px) {
+  .contactContainer .contactTextContainer .portrait {
+    height: 175px;
+    width: 175px;
+    -webkit-transform: translateY(-85px) translateX(-100px);
+            transform: translateY(-85px) translateX(-100px);
+  }
+}
+
+@media (max-width: 730px) and (min-width: 676px) {
+  .contactContainer .portrait {
+    height: 150px;
+    width: 150px;
+    -webkit-transform: translateY(-65px) translateX(-75px);
+            transform: translateY(-65px) translateX(-75px);
+  }
+}
+
+@media (max-width: 676px) and (min-width: 500px) {
+  .contactContainer .contactTextContainer {
+    height: 375px;
+    width: 450px;
+    padding: 25px 10px 0px 10px;
+  }
+  .contactContainer .contactTextContainer .portrait {
+    height: 150px;
+    width: 150px;
+    -webkit-transform: translateY(-90px) translateX(-15px);
+            transform: translateY(-90px) translateX(-15px);
+  }
+  .contactContainer .contactTextContainer .welcome {
+    font-size: 1.5em;
+    margin-left: 30%;
+  }
+  .contactContainer .contactTextContainer .text {
+    font-size: 1.3em;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactContainer {
+    overflow-x: scroll;
+  }
+  .contactContainer .contactTextContainer {
+    height: 350px;
+    width: 325px;
+    padding: 25px 10px 0px 10px;
+  }
+  .contactContainer .contactTextContainer .portrait {
+    height: 125px;
+    width: 125px;
+    -webkit-transform: translateY(-75px) translateX(-20px);
+            transform: translateY(-75px) translateX(-20px);
+  }
+  .contactContainer .contactTextContainer .welcome {
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    margin-left: 33%;
+  }
+  .contactContainer .contactTextContainer .text {
+    font-size: 1.1em;
+    margin-top: 0;
+    letter-spacing: 3px;
+    line-height: 23px;
+  }
+}
+/*# sourceMappingURL=ContactStyles.css.map */
