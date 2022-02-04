@@ -30,18 +30,92 @@
   border-radius: 40px;
 }
 
-.contactContainer .contactTextContainer .welcome {
+.contactContainer .contactTextContainer .input {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  height: 30px;
   font-family: "Alta";
-  letter-spacing: 6px;
-  margin-left: 15%;
+  color: #000;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  background-color: #94857b;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-.contactContainer .contactTextContainer .text {
+.contactContainer .contactTextContainer .input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.contactContainer .contactTextContainer .input:-ms-input-placeholder {
+  color: #000;
+}
+
+.contactContainer .contactTextContainer .input::-ms-input-placeholder {
+  color: #000;
+}
+
+.contactContainer .contactTextContainer .input::placeholder {
+  color: #000;
+}
+
+.contactContainer .contactTextContainer .input:focus {
+  outline: none;
+}
+
+.contactContainer .contactTextContainer .messageTextBox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
   text-align: center;
+  background-color: #94857b;
+  height: 100px;
+  border: none;
   font-family: "Alta";
-  letter-spacing: 5px;
-  font-size: 1.8em;
-  margin-top: 30px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+.contactContainer .contactTextContainer .messageTextBox::-webkit-input-placeholder {
+  color: #000;
+}
+
+.contactContainer .contactTextContainer .messageTextBox:-ms-input-placeholder {
+  color: #000;
+}
+
+.contactContainer .contactTextContainer .messageTextBox::-ms-input-placeholder {
+  color: #000;
+}
+
+.contactContainer .contactTextContainer .messageTextBox::placeholder {
+  color: #000;
+}
+
+.contactContainer .contactTextContainer .messageTextBox:focus {
+  outline: none;
+}
+
+.contactContainer .contactTextContainer .submit {
+  display: block;
+  margin: 0 auto 0 auto;
+  font-family: "Alta";
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  background-color: #94857b;
+  border: none;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.contactContainer .contactTextContainer .submit:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (max-width: 992px) and (min-width: 676px) {
@@ -49,14 +123,6 @@
     height: 375px;
     width: 525px;
     padding-bottom: 45px;
-  }
-  .contactContainer .contactTextContainer .welcome {
-    letter-spacing: 5px;
-    font-size: 1.8em;
-  }
-  .contactContainer .contactTextContainer .text {
-    letter-spacing: 4px;
-    font-size: 1.6em;
   }
 }
 
@@ -80,23 +146,18 @@
 
 @media (max-width: 676px) and (min-width: 500px) {
   .contactContainer .contactTextContainer {
-    height: 375px;
+    height: 425px;
     width: 450px;
     padding: 25px 10px 0px 10px;
+  }
+  .contactContainer .contactTextContainer .input {
+    letter-spacing: 1px;
   }
   .contactContainer .contactTextContainer .portrait {
     height: 150px;
     width: 150px;
     -webkit-transform: translateY(-90px) translateX(-15px);
             transform: translateY(-90px) translateX(-15px);
-  }
-  .contactContainer .contactTextContainer .welcome {
-    font-size: 1.5em;
-    margin-left: 30%;
-  }
-  .contactContainer .contactTextContainer .text {
-    font-size: 1.3em;
-    margin-top: 0;
   }
 }
 
@@ -105,26 +166,18 @@
     overflow-x: scroll;
   }
   .contactContainer .contactTextContainer {
-    height: 350px;
+    height: 425px;
     width: 325px;
     padding: 25px 10px 0px 10px;
+  }
+  .contactContainer .contactTextContainer .input {
+    letter-spacing: 0px;
   }
   .contactContainer .contactTextContainer .portrait {
     height: 125px;
     width: 125px;
     -webkit-transform: translateY(-75px) translateX(-20px);
             transform: translateY(-75px) translateX(-20px);
-  }
-  .contactContainer .contactTextContainer .welcome {
-    font-size: 1.3rem;
-    letter-spacing: 5px;
-    margin-left: 33%;
-  }
-  .contactContainer .contactTextContainer .text {
-    font-size: 1.1em;
-    margin-top: 0;
-    letter-spacing: 3px;
-    line-height: 23px;
   }
 }
 /*# sourceMappingURL=ContactStyles.css.map */

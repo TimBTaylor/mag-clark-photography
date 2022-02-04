@@ -15,9 +15,9 @@ export const ContactBody = () => {
     emailjs
       .sendForm(
         "service_67jhdew",
-        "YOUR_TEMPLATE_ID",
+        "template_bqbxafx",
         form.current,
-        "YOUR_USER_ID"
+        "user_GfWAy2GoDTLAxar1hX7Yu"
       )
       .then(
         (result) => {
@@ -32,14 +32,46 @@ export const ContactBody = () => {
     <div className="contactContainer">
       <div className="contactTextContainer">
         <img src={Portrait} alt="portait" className="portrait" />
-        <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
+        <form ref={form} onSubmit={sendEmail} autoComplete="off">
+          <input
+            type="text"
+            name="user_name"
+            className="input"
+            placeholder="name"
+            required
+          />
+          <input
+            type="email"
+            name="user_email"
+            className="input"
+            placeholder="email"
+            required
+          />
+          <input
+            type="text"
+            name="user_instagram"
+            className="input"
+            placeholder="instagram"
+          />
+          <input
+            type="text"
+            name="find_me"
+            className="input"
+            placeholder="How did you find me?"
+          />
+          <input
+            type="text"
+            name="interested_in"
+            className="input"
+            placeholder="What session are you interested in?"
+            required
+          />
+          <textarea
+            name="message"
+            className="messageTextBox"
+            placeholder="Enter a message"
+          />
+          <input type="submit" value="Submit" className="submit" />
         </form>
       </div>
     </div>
