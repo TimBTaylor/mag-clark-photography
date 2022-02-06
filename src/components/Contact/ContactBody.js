@@ -1,15 +1,18 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "../../styles/Contact/ContactStyles.css";
-import Instagram from "../../images/instagram-contact.svg";
-import Facebook from "../../images/facebook-contact.svg";
-import Email from "../../images/email-contact.svg";
 import Portrait from "../../images/portrait.png";
 import emailjs from "@emailjs/browser";
+import Checkmark from "../../images/accept.png";
+import Camera from "../../images/camera.svg";
 
 export const ContactBody = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
   const form = useRef();
 
   const sendEmail = (e) => {
+    setIsLoading(true);
     e.preventDefault();
 
     emailjs
@@ -22,15 +25,49 @@ export const ContactBody = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setIsLoading(false);
+          setIsSubmitted(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
+
   return (
     <div className="contactContainer">
-      <div className="contactTextContainer">
+      {isSubmitted ? (
+        <div className="submissionContainer">
+          <img className="checkmark" src={Checkmark} alt="checkmark" />
+          <h1 className="submitted">Submitted Successfully</h1>
+          <button
+            className="submittedButton"
+            onClick={() => setIsSubmitted(false)}
+          >
+            OK
+          </button>
+        </div>
+      ) : (
+        ""
+      )}
+      {isLoading ? (
+        <div className="logoContainer">
+          <img src={Camera} alt="camera" className="camera" />
+          <div className="text">
+            <h1 className="magClark">mag clark</h1>
+            <h1 className="photography">photography</h1>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
+      <div
+        className={
+          isSubmitted || isLoading
+            ? "contactTextContainer adjustOpacity"
+            : "contactTextContainer"
+        }
+      >
         <img src={Portrait} alt="portait" className="portrait" />
         <form ref={form} onSubmit={sendEmail} autoComplete="off">
           <input

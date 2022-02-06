@@ -1,4 +1,8 @@
 /* contact body styles */
+
+.adjustOpacity {
+  opacity: 0.1;
+}
 .contactContainer {
   display: flex;
   justify-content: center;
@@ -6,6 +10,94 @@
   height: 80vh;
   width: 100vw;
   position: relative;
+
+  .submissionContainer {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: auto;
+    padding: 15px;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #94857b;
+
+    .checkmark {
+      height: 35px;
+      width: 35px;
+    }
+
+    .submitted {
+      font-family: "Alta";
+      font-size: 1.2em;
+      letter-spacing: 2px;
+    }
+
+    .submittedButton {
+      background: none;
+      border: none;
+      margin-top: 15px;
+      font-size: 1.2em;
+      font-family: "Alta";
+      letter-spacing: 2px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .logoContainer {
+    background-color: #c2b19c;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-70px, -45px);
+
+    .camera {
+      animation: rotation 1s infinite linear;
+
+      transform: rotate(360deg);
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      top: -55px;
+      left: -45px;
+    }
+
+    .text {
+      position: absolute;
+      top: 33px;
+      left: 50px;
+      width: auto;
+      z-index: 2;
+    }
+
+    .magClark {
+      font-family: "Dream Avenue";
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 1.1em;
+      padding: 0;
+      margin: 0;
+      letter-spacing: 4px;
+    }
+
+    .photography {
+      font-family: "Lexend Tera", sans-serif;
+      text-transform: uppercase;
+      font-size: 0.6em;
+      font-weight: 100;
+      padding: 0;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+  }
 
   .portrait {
     position: absolute;
@@ -57,6 +149,7 @@
       font-family: "Alta";
       font-size: 1.2em;
       letter-spacing: 2px;
+      resize: none;
       &::placeholder {
         color: #000;
       }
@@ -152,5 +245,15 @@
         transform: translateY(-75px) translateX(-20px);
       }
     }
+  }
+}
+
+@keyframes rotation {
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 }

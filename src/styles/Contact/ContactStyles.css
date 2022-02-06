@@ -1,4 +1,8 @@
 /* contact body styles */
+.adjustOpacity {
+  opacity: 0.1;
+}
+
 .contactContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,6 +14,105 @@
   height: 80vh;
   width: 100vw;
   position: relative;
+}
+
+.contactContainer .submissionContainer {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: auto;
+  width: auto;
+  padding: 15px;
+  background-color: white;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #94857b;
+}
+
+.contactContainer .submissionContainer .checkmark {
+  height: 35px;
+  width: 35px;
+}
+
+.contactContainer .submissionContainer .submitted {
+  font-family: "Alta";
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+.contactContainer .submissionContainer .submittedButton {
+  background: none;
+  border: none;
+  margin-top: 15px;
+  font-size: 1.2em;
+  font-family: "Alta";
+  letter-spacing: 2px;
+}
+
+.contactContainer .submissionContainer .submittedButton:hover {
+  cursor: pointer;
+}
+
+.contactContainer .logoContainer {
+  background-color: #c2b19c;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-70px, -45px);
+          transform: translate(-70px, -45px);
+}
+
+.contactContainer .logoContainer .camera {
+  -webkit-animation: rotation 1s infinite linear;
+          animation: rotation 1s infinite linear;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: -55px;
+  left: -45px;
+}
+
+.contactContainer .logoContainer .text {
+  position: absolute;
+  top: 33px;
+  left: 50px;
+  width: auto;
+  z-index: 2;
+}
+
+.contactContainer .logoContainer .magClark {
+  font-family: "Dream Avenue";
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.1em;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.contactContainer .logoContainer .photography {
+  font-family: "Lexend Tera", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 2px;
 }
 
 .contactContainer .portrait {
@@ -78,6 +181,7 @@
   font-family: "Alta";
   font-size: 1.2em;
   letter-spacing: 2px;
+  resize: none;
 }
 
 .contactContainer .contactTextContainer .messageTextBox::-webkit-input-placeholder {
@@ -178,6 +282,28 @@
     width: 125px;
     -webkit-transform: translateY(-75px) translateX(-20px);
             transform: translateY(-75px) translateX(-20px);
+  }
+}
+
+@-webkit-keyframes rotation {
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotation {
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 /*# sourceMappingURL=ContactStyles.css.map */

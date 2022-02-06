@@ -37,7 +37,7 @@ export const LandingLinks = () => {
         </div>
         <div className="instagramLogoContainer">
           <a
-            href="https://www.instagram.com/magclarkphotography/?hl=en"
+            href="https://www.instagram.com/magclarkphoto/?hl=en"
             className="link"
             target="_blank"
             rel="noreferrer"
