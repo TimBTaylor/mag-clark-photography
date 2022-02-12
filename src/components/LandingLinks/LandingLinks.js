@@ -13,7 +13,9 @@ export const LandingLinks = () => {
           <Link to="/pricing">
             <button className="btn">pricing</button>
           </Link>
-          <button className="btn">portfolio</button>
+          <Link to="/portfolio">
+            <button className="btn">portfolio</button>
+          </Link>
           <Link to="/about">
             <button className="btn">about</button>
           </Link>

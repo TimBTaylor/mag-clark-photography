@@ -1,1 +1,68 @@
-/* No CSS *//*# sourceMappingURL=Portfolio.css.map */
+.portfolioBodyContainer {
+  height: 80vh;
+  background-color: #c2b19c;
+}
+
+.portfolioBodyContainer .slider {
+  position: relative;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolioBodyContainer .slider .slide {
+  width: auto;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition-duration: 1s ease;
+          transition-duration: 1s ease;
+}
+
+.portfolioBodyContainer .slider .active {
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.portfolioBodyContainer .slider .img {
+  width: auto;
+  height: 90%;
+}
+
+.portfolioBodyContainer .slider .right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.portfolioBodyContainer .slider .left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*# sourceMappingURL=Portfolio.css.map */

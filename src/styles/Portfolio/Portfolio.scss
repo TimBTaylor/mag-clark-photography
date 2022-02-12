@@ -1,0 +1,52 @@
+.portfolioBodyContainer {
+  height: 80vh;
+  background-color: #c2b19c;
+
+  .slider {
+    position: relative;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .slide {
+      width: auto;
+      height: 100%;
+      opacity: 0;
+      transition-duration: 1s ease;
+    }
+
+    .active {
+      opacity: 1;
+      transition-duration: 1s;
+      transform: scale(1.08);
+    }
+
+    .img {
+      width: auto;
+      height: 90%;
+    }
+
+    .right-arrow {
+      position: absolute;
+      top: 50%;
+      right: 32px;
+      font-size: 3rem;
+      color: #000;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .left-arrow {
+      position: absolute;
+      top: 50%;
+      left: 32px;
+      font-size: 3rem;
+      color: #000;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}
