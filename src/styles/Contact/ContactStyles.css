@@ -214,6 +214,8 @@
   border: none;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
+  background: none;
+  color: #000;
 }
 
 .contactContainer .contactTextContainer .submit:hover {

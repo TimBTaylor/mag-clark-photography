@@ -11,10 +11,14 @@ import Image10 from "../../images/portfolio-images/image10.png";
 import Image11 from "../../images/portfolio-images/image11.png";
 import Image12 from "../../images/portfolio-images/image12.png";
 import Image13 from "../../images/portfolio-images/image13.png";
-import Image14 from "../../images/portfolio-images/image14.png";
-import Image15 from "../../images/portfolio-images/image15.png";
-import Image16 from "../../images/portfolio-images/image16.png";
-import Image17 from "../../images/portfolio-images/image17.png";
+// import Image14 from "../../images/portfolio-images/image14.png";
+// import Image15 from "../../images/portfolio-images/image15.png";
+// import Image16 from "../../images/portfolio-images/image16.png";
+// import Image17 from "../../images/portfolio-images/image17.png";
+import Image14 from "../../images/portfolio-images/image14.webp";
+import Image15 from "../../images/portfolio-images/image15.webp";
+import Image16 from "../../images/portfolio-images/image16.webp";
+import Image17 from "../../images/portfolio-images/image17.webp";
 
 export const SliderData = [
   {

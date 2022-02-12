@@ -72,6 +72,7 @@
   letter-spacing: 8px;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
+  color: #000;
 }
 
 .LandingLinksContainer .btn:hover {
