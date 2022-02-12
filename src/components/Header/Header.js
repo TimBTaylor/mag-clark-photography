@@ -2,6 +2,7 @@ import React from "react";
 import Camera from "../../images/camera.svg";
 import { Link } from "react-router-dom";
 import "../../styles/Header/HeaderStyles.css";
+import { Navbar } from "../Navbar/Navbar";
 
 export const Header = (props) => {
   const title = props.title;
@@ -17,6 +18,7 @@ export const Header = (props) => {
         </div>
       </div>
       <h1 className="title">{title}</h1>
+      <Navbar page={title} />
     </div>
   );
 };

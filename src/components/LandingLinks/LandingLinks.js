@@ -1,8 +1,7 @@
 import React from "react";
-import FacebookLogo from "../../images/facebookLogo.svg";
-import InstagramLogo from "../../images/instagramLogo.svg";
 import { Link } from "react-router-dom";
 import "../../styles/Landing/LandingLinks.css";
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 
 export const LandingLinks = () => {
   return (
@@ -23,32 +22,22 @@ export const LandingLinks = () => {
             <button className="btn">contact</button>
           </Link>
         </div>
-        <div className="facebookLogoContainer">
+        <div className="logoContainer">
           <a
             href="https://www.facebook.com/maggie.clark.75685"
             className="link"
             target="_blank"
             rel="noreferrer"
           >
-            <img
-              src={FacebookLogo}
-              className="facebookLogo"
-              alt="facebook logo"
-            />
+            <FaFacebookSquare className="facebookLogo" />
           </a>
-        </div>
-        <div className="instagramLogoContainer">
           <a
             href="https://www.instagram.com/magclarkphoto/?hl=en"
             className="link"
             target="_blank"
             rel="noreferrer"
           >
-            <img
-              src={InstagramLogo}
-              className="instagramLogo"
-              alt="instagram logo"
-            />
+            <FaInstagram className="instagramLogo" />
           </a>
         </div>
       </div>

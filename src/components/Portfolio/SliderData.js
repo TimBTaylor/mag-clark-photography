@@ -18,8 +18,18 @@ import Image17 from "../../images/portfolio-images/image17.png";
 
 export const SliderData = [
   {
-    image: Image1,
+    image: Image14,
   },
+  {
+    image: Image15,
+  },
+  {
+    image: Image16,
+  },
+  {
+    image: Image17,
+  },
+
   {
     image: Image2,
   },
@@ -53,19 +63,8 @@ export const SliderData = [
   {
     image: Image12,
   },
+  { image: Image13 },
   {
-    image: Image13,
-  },
-  {
-    image: Image14,
-  },
-  {
-    image: Image15,
-  },
-  {
-    image: Image16,
-  },
-  {
-    image: Image17,
+    image: Image1,
   },
 ];

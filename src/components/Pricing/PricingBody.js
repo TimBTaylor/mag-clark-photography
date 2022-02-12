@@ -32,7 +32,7 @@ export const PricingBody = () => {
       type: "Maternity",
       price: "$75",
       time: "45",
-      timeType: "hours",
+      timeType: "minutes",
       images: "25-40",
     },
   ];

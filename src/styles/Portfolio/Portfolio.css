@@ -1,11 +1,13 @@
 .portfolioBodyContainer {
   height: 80vh;
   background-color: #c2b19c;
+  position: relative;
 }
 
 .portfolioBodyContainer .slider {
   position: relative;
   height: 80%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,20 +17,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .portfolioBodyContainer .slider .slide {
   width: auto;
   height: 100%;
   opacity: 0;
-  -webkit-transition-duration: 1s ease;
-          transition-duration: 1s ease;
+  -webkit-transition-duration: 0.5s ease;
+          transition-duration: 0.5s ease;
 }
 
 .portfolioBodyContainer .slider .active {
   opacity: 1;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }
@@ -38,31 +42,33 @@
   height: 90%;
 }
 
-.portfolioBodyContainer .slider .right-arrow {
+.portfolioBodyContainer .right-arrow {
   position: absolute;
-  top: 50%;
+  top: 35%;
   right: 32px;
   font-size: 3rem;
-  color: #000;
+  color: #fff;
   z-index: 10;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  z-index: 11;
 }
 
-.portfolioBodyContainer .slider .left-arrow {
+.portfolioBodyContainer .left-arrow {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 32px;
   font-size: 3rem;
-  color: #000;
+  color: #fff;
   z-index: 10;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  z-index: 11;
 }
 /*# sourceMappingURL=Portfolio.css.map */
