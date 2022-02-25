@@ -1,4 +1,3 @@
-import Image1 from "../../images/portfolio-images/image1.webp";
 import Image2 from "../../images/portfolio-images/image2.webp";
 import Image3 from "../../images/portfolio-images/image3.webp";
 import Image4 from "../../images/portfolio-images/image4.webp";
@@ -15,8 +14,24 @@ import Image14 from "../../images/portfolio-images/image14.webp";
 import Image15 from "../../images/portfolio-images/image15.webp";
 import Image16 from "../../images/portfolio-images/image16.webp";
 import Image17 from "../../images/portfolio-images/image17.webp";
+import Image18 from "../../images/portfolio-images/image18.webp";
+import Image19 from "../../images/portfolio-images/image19.webp";
+import Image22 from "../../images/portfolio-images/image22.webp";
+import Image23 from "../../images/portfolio-images/image23.webp";
+import Image24 from "../../images/portfolio-images/image24.webp";
+import Image25 from "../../images/portfolio-images/image25.webp";
+import Image26 from "../../images/portfolio-images/image26.webp";
+import Image27 from "../../images/portfolio-images/image27.webp";
 
 export const SliderData = [
+  { image: Image18 },
+  { image: Image19 },
+  { image: Image22 },
+  { image: Image23 },
+  { image: Image24 },
+  { image: Image25 },
+  { image: Image26 },
+  { image: Image27 },
   {
     image: Image14,
   },
@@ -64,7 +79,4 @@ export const SliderData = [
     image: Image12,
   },
   { image: Image13 },
-  {
-    image: Image1,
-  },
 ];
