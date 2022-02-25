@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "../../styles/Contact/ContactStyles.css";
-import Portrait from "../../images/portrait.png";
+import Portrait from "../../images/portrait.webp";
 import emailjs from "@emailjs/browser";
 import Checkmark from "../../images/accept.png";
 import Camera from "../../images/camera.svg";

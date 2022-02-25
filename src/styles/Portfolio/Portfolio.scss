@@ -3,6 +3,11 @@
   background-color: #c2b19c;
   position: relative;
 
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+
   .slider {
     position: relative;
     height: 80%;
