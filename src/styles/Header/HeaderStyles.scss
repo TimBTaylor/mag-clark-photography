@@ -1,35 +1,25 @@
 /* header styles */
 .headerContainer {
-  height: 20vh;
+  height: auto;
   width: 100vw;
-  background-color: #c2b19c;
   text-align: center;
   display: flex;
-  flex-direction: column;
-  position: relative;
+  justify-content: space-between;
+  padding-top: 30px;
   .logoContainer {
-    background-color: #c2b19c;
-    position: relative;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+    height: auto;
+    padding-left: 15px;
 
-    .camera {
-      transform: rotate(360deg);
-      height: 200px;
-      width: 200px;
-      position: absolute;
-      top: -55px;
-      left: -45px;
-    }
-
-    .text {
-      position: absolute;
-      top: 33px;
-      left: 50px;
-      width: auto;
-      z-index: 2;
-    }
+    // .camera {
+    //   transform: rotate(360deg);
+    //   height: 200px;
+    //   width: 200px;
+    //   position: absolute;
+    //   top: -55px;
+    //   left: -45px;
+    // }
 
     .magClark {
       font-family: "Dream Avenue";
@@ -60,30 +50,10 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .headerContainer {
     .logoContainer {
-      .camera {
-        height: 150px;
-        width: 150px;
-        top: -35px;
-        left: -30px;
-      }
-
-      .text {
-        top: 28px;
-        left: 40px;
-      }
-
-      .magClark {
-        font-size: 0.9em;
-        letter-spacing: 3px;
-      }
-
-      .photography {
-        font-size: 0.5em;
-        letter-spacing: 1px;
-      }
+      display: none;
     }
   }
 }

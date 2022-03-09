@@ -1,162 +1,135 @@
-.navbarContainer .toggle {
-  font-size: 2.3em;
-  position: absolute;
-  top: 20px;
-  right: 50px;
-  z-index: 13;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.navbarContainer .toggle:hover {
-  cursor: pointer;
-}
-
-.navbarContainer .animate {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.navbarContainer .navContainer {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 12;
-  height: 100vh;
-  width: 100vw;
-  background-color: #c2b19c;
+.navbarContainer {
+  width: auto;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
 }
 
-.navbarContainer .navContainer .headerContainer {
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.navbarContainer .navContainer .headerContainer .logoContainer {
-  background-color: #c2b19c;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.navbarContainer .navContainer .headerContainer .logoContainer .camera {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  top: -55px;
-  left: -45px;
-}
-
-.navbarContainer .navContainer .headerContainer .logoContainer .text {
-  position: absolute;
-  top: 33px;
-  left: 50px;
-  width: auto;
-  z-index: 2;
-}
-
-.navbarContainer .navContainer .headerContainer .logoContainer .magClark {
-  font-family: "Dream Avenue";
-  text-transform: uppercase;
-  font-weight: 200;
-  font-size: 1.1em;
-  padding: 0;
-  margin: 0;
-  letter-spacing: 4px;
-}
-
-.navbarContainer .navContainer .headerContainer .logoContainer .photography {
-  font-family: "Lexend Tera", sans-serif;
-  text-transform: uppercase;
-  font-size: 0.6em;
-  font-weight: 100;
-  padding: 0;
-  margin: 0;
-  letter-spacing: 2px;
-}
-
-.navbarContainer .navContainer .btnContainer {
-  width: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.navbarContainer .navContainer .btn {
-  margin: 20px;
-  border: none;
-  background: none;
-  font-family: "Alta";
-  font-size: 2em;
-  letter-spacing: 5px;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.navbarContainer .navContainer .btn:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.navbarContainer .hidden {
+.logoAndToggle,
+.compactNavContainer {
   display: none;
 }
 
-@media (max-width: 450px) {
-  .navbarContainer .toggle {
-    right: 30px;
-  }
+.navContainer {
+  padding-right: 15px;
 }
 
-@media (max-width: 992px) {
-  .navbarContainer .navContainer .headerContainer .logoContainer .camera {
-    height: 150px;
-    width: 150px;
-    top: -35px;
-    left: -30px;
+.navContainer button {
+  text-align: center;
+  background: none;
+  border: none;
+  font-family: "Alta";
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  margin: 0 5px;
+}
+
+.navContainer .active:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 5px;
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 768px) {
+  .navbarContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .navbarContainer .navContainer .headerContainer .logoContainer .text {
-    top: 28px;
-    left: 40px;
+  .logoAndToggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
   }
-  .navbarContainer .navContainer .headerContainer .logoContainer .magClark {
-    font-size: 0.9em;
-    letter-spacing: 3px;
+  .toggle {
+    position: absolute;
+    right: 25px;
+    font-size: 2rem;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
-  .navbarContainer .navContainer .headerContainer .logoContainer .photography {
-    font-size: 0.5em;
+  .toggle:hover {
+    cursor: pointer;
+  }
+  .animate {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navContainer {
+    display: none;
+  }
+  .magClark {
+    font-family: "Dream Avenue";
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 4px;
+  }
+  .photography {
+    font-family: "Lexend Tera", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  .compactNavContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+  }
+  .compactNavContainer button {
+    text-align: center;
+    background: none;
+    border: none;
+    font-family: "Alta";
+    font-size: 2em;
     letter-spacing: 1px;
+    margin: 20px 0;
+    width: auto;
+  }
+  .compactNavContainer .active:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 5px;
+    border-bottom: 1px solid black;
+  }
+  .hidden {
+    display: none;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */

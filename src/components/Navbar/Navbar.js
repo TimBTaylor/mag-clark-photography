@@ -2,81 +2,103 @@ import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import "../../styles/Navbar/Navbar.css";
 import { Link } from "react-router-dom";
-import Camera from "../../images/camera.svg";
+// import Camera from "../../images/camera.svg";
 
 export const Navbar = ({ page }) => {
   const [visible, setVisible] = useState(false);
   return (
     <div className="navbarContainer">
-      <AiOutlineMenu
-        className={visible ? "toggle animate" : "toggle"}
-        onClick={() => setVisible(!visible)}
-      />
-      <div className={visible ? "navContainer" : "navContainer hidden"}>
-        <div className="headerContainer">
-          <div className="logoContainer">
-            <img src={Camera} alt="camera" className="camera" />
-            <div className="text">
-              <Link
-                to="/"
-                style={{ color: "inherit", textDecoration: "inherit" }}
-              >
-                <h1 className="magClark">mag clark</h1>
-                <h1 className="photography">photography</h1>
-              </Link>
-            </div>
-          </div>
+      <div className="logoAndToggle">
+        <div className="text">
+          <Link to="/" style={{ color: "inherit", textDecoration: "inherit" }}>
+            <h1 className="magClark">mag clark</h1>
+            <h1 className="photography">photography</h1>
+          </Link>
         </div>
-        <button className="btn">
+        <AiOutlineMenu
+          className={visible ? "toggle animate" : "toggle"}
+          onClick={() => setVisible(!visible)}
+        />
+      </div>
+      <div
+        className={
+          visible ? "compactNavContainer" : "compactNavContainer hidden"
+        }
+      >
+        <button className={page === "home" ? "active" : ""}>
           <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
-            Home
+            home
           </Link>
         </button>
-        {page === "pricing" ? (
-          ""
-        ) : (
-          <button className="btn">
-            <Link
-              to="/pricing"
-              style={{ textDecoration: "none", color: "#000" }}
-            >
-              pricing
-            </Link>
-          </button>
-        )}
-        {page === "portfolio" ? (
-          ""
-        ) : (
-          <button className="btn">
-            <Link
-              to="/portfolio"
-              style={{ textDecoration: "none", color: "#000" }}
-            >
-              portfolio
-            </Link>
-          </button>
-        )}
-        {page === "about" ? (
-          ""
-        ) : (
-          <button className="btn">
-            <Link to="/about" style={{ textDecoration: "none", color: "#000" }}>
-              about
-            </Link>
-          </button>
-        )}
-        {page === "contact" ? (
-          ""
-        ) : (
-          <button className="btn">
-            <Link
-              to="/contact"
-              style={{ textDecoration: "none", color: "#000" }}
-            >
-              contact
-            </Link>
-          </button>
-        )}
+        <button className={page === "meetme" ? "active" : ""}>
+          <Link to="/meetme" style={{ textDecoration: "none", color: "#000" }}>
+            meet me
+          </Link>
+        </button>
+        <button className={page === "investment" ? "active" : ""}>
+          <Link
+            to="/investment"
+            style={{ textDecoration: "none", color: "#000" }}
+          >
+            investment
+          </Link>
+        </button>
+        <button className={page === "portfolio" ? "active" : ""}>
+          <Link
+            to="/portfolio"
+            style={{ textDecoration: "none", color: "#000" }}
+          >
+            portfolio
+          </Link>
+        </button>
+        <button className={page === "contact" ? "active" : ""}>
+          <Link to="/contacy" style={{ textDecoration: "none", color: "#000" }}>
+            contact
+          </Link>
+        </button>
+        <button className={page === "blog" ? "active" : ""}>
+          <Link to="/blog" style={{ textDecoration: "none", color: "#000" }}>
+            blog
+          </Link>
+        </button>
+      </div>
+      <div className="navContainer">
+        <button className={page === "home" ? "active" : ""}>
+          <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
+            home
+          </Link>
+        </button>
+        <button className={page === "meetme" ? "active" : ""}>
+          <Link to="/meetme" style={{ textDecoration: "none", color: "#000" }}>
+            meet me
+          </Link>
+        </button>
+        <button className={page === "investment" ? "active" : ""}>
+          <Link
+            to="/investment"
+            style={{ textDecoration: "none", color: "#000" }}
+          >
+            investment
+          </Link>
+        </button>
+        <button className={page === "portfolio" ? "active" : ""}>
+          <Link
+            to="/portfolio"
+            style={{ textDecoration: "none", color: "#000" }}
+          >
+            portfolio
+          </Link>
+        </button>
+        <button className={page === "contact" ? "active" : ""}>
+          <Link to="/contacy" style={{ textDecoration: "none", color: "#000" }}>
+            contact
+          </Link>
+        </button>
+        <button className={page === "blog" ? "active" : ""}>
+          <Link to="/blog" style={{ textDecoration: "none", color: "#000" }}>
+            blog
+          </Link>
+        </button>
       </div>
     </div>
   );

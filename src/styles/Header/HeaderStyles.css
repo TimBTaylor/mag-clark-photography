@@ -1,49 +1,26 @@
 /* header styles */
 .headerContainer {
-  height: 20vh;
+  height: auto;
   width: 100vw;
-  background-color: #c2b19c;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
 }
 
 .headerContainer .logoContainer {
-  background-color: #c2b19c;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.headerContainer .logoContainer .camera {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  top: -55px;
-  left: -45px;
-}
-
-.headerContainer .logoContainer .text {
-  position: absolute;
-  top: 33px;
-  left: 50px;
-  width: auto;
-  z-index: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  padding-left: 15px;
 }
 
 .headerContainer .logoContainer .magClark {
@@ -73,24 +50,9 @@
   font-size: 2rem;
 }
 
-@media (max-width: 992px) {
-  .headerContainer .logoContainer .camera {
-    height: 150px;
-    width: 150px;
-    top: -35px;
-    left: -30px;
-  }
-  .headerContainer .logoContainer .text {
-    top: 28px;
-    left: 40px;
-  }
-  .headerContainer .logoContainer .magClark {
-    font-size: 0.9em;
-    letter-spacing: 3px;
-  }
-  .headerContainer .logoContainer .photography {
-    font-size: 0.5em;
-    letter-spacing: 1px;
+@media (max-width: 768px) {
+  .headerContainer .logoContainer {
+    display: none;
   }
 }
 /*# sourceMappingURL=HeaderStyles.css.map */

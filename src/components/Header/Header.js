@@ -1,5 +1,5 @@
 import React from "react";
-import Camera from "../../images/camera.svg";
+// import Camera from "../../images/camera.svg";
 import { Link } from "react-router-dom";
 import "../../styles/Header/HeaderStyles.css";
 import { Navbar } from "../Navbar/Navbar";
@@ -9,7 +9,7 @@ export const Header = (props) => {
   return (
     <div className="headerContainer">
       <div className="logoContainer">
-        <img src={Camera} alt="camera" className="camera" />
+        {/* <img src={Camera} alt="camera" className="camera" /> */}
         <div className="text">
           <Link to="/" style={{ color: "inherit", textDecoration: "inherit" }}>
             <h1 className="magClark">mag clark</h1>
@@ -17,7 +17,7 @@ export const Header = (props) => {
           </Link>
         </div>
       </div>
-      <h1 className="title">{title}</h1>
+
       <Navbar page={title} />
     </div>
   );
