@@ -2,17 +2,20 @@ import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import "../../styles/Navbar/Navbar.css";
 import { Link } from "react-router-dom";
-// import Camera from "../../images/camera.svg";
 
 export const Navbar = ({ page }) => {
   const [visible, setVisible] = useState(false);
   return (
     <div className="navbarContainer">
-      <div className="logoAndToggle">
+      <div className={visible ? "logoAndToggle whiteout" : "logoAndToggle"}>
         <div className="text">
           <Link to="/" style={{ color: "inherit", textDecoration: "inherit" }}>
-            <h1 className="magClark">mag clark</h1>
-            <h1 className="photography">photography</h1>
+            <h1 className={visible ? "magClark blackText" : "magClark"}>
+              mag clark
+            </h1>
+            <h1 className={visible ? "photography blackText" : "photography"}>
+              photography
+            </h1>
           </Link>
         </div>
         <AiOutlineMenu
@@ -20,19 +23,17 @@ export const Navbar = ({ page }) => {
           onClick={() => setVisible(!visible)}
         />
       </div>
-      <div
-        className={
-          visible ? "compactNavContainer" : "compactNavContainer hidden"
-        }
-      >
+
+      {/* smaller than 768px */}
+      <div className={visible ? "compactNavContainer" : "hidden"}>
         <button className={page === "home" ? "active" : ""}>
           <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
-            home
+            <span>home</span>
           </Link>
         </button>
         <button className={page === "meetme" ? "active" : ""}>
           <Link to="/meetme" style={{ textDecoration: "none", color: "#000" }}>
-            meet me
+            <span>meet me</span>
           </Link>
         </button>
         <button className={page === "investment" ? "active" : ""}>
@@ -40,7 +41,7 @@ export const Navbar = ({ page }) => {
             to="/investment"
             style={{ textDecoration: "none", color: "#000" }}
           >
-            investment
+            <span>investment</span>
           </Link>
         </button>
         <button className={page === "portfolio" ? "active" : ""}>
@@ -48,35 +49,37 @@ export const Navbar = ({ page }) => {
             to="/portfolio"
             style={{ textDecoration: "none", color: "#000" }}
           >
-            portfolio
+            <span>portfolio</span>
           </Link>
         </button>
         <button className={page === "contact" ? "active" : ""}>
           <Link to="/contacy" style={{ textDecoration: "none", color: "#000" }}>
-            contact
+            <span>contact</span>
           </Link>
         </button>
         <button className={page === "blog" ? "active" : ""}>
           <Link to="/blog" style={{ textDecoration: "none", color: "#000" }}>
-            blog
+            <span>blog</span>
           </Link>
         </button>
       </div>
+
+      {/* larger than 768px  */}
       <div className="navContainer">
         <button className={page === "home" ? "active" : ""}>
-          <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
+          <Link to="/" style={{ textDecoration: "none", color: "#fff" }}>
             home
           </Link>
         </button>
         <button className={page === "meetme" ? "active" : ""}>
-          <Link to="/meetme" style={{ textDecoration: "none", color: "#000" }}>
+          <Link to="/meetme" style={{ textDecoration: "none", color: "#fff" }}>
             meet me
           </Link>
         </button>
         <button className={page === "investment" ? "active" : ""}>
           <Link
             to="/investment"
-            style={{ textDecoration: "none", color: "#000" }}
+            style={{ textDecoration: "none", color: "#fff" }}
           >
             investment
           </Link>
@@ -84,18 +87,18 @@ export const Navbar = ({ page }) => {
         <button className={page === "portfolio" ? "active" : ""}>
           <Link
             to="/portfolio"
-            style={{ textDecoration: "none", color: "#000" }}
+            style={{ textDecoration: "none", color: "#fff" }}
           >
             portfolio
           </Link>
         </button>
         <button className={page === "contact" ? "active" : ""}>
-          <Link to="/contacy" style={{ textDecoration: "none", color: "#000" }}>
+          <Link to="/contacy" style={{ textDecoration: "none", color: "#fff" }}>
             contact
           </Link>
         </button>
         <button className={page === "blog" ? "active" : ""}>
-          <Link to="/blog" style={{ textDecoration: "none", color: "#000" }}>
+          <Link to="/blog" style={{ textDecoration: "none", color: "#fff" }}>
             blog
           </Link>
         </button>

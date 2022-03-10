@@ -1,151 +1,3 @@
-// .navbarContainer {
-//   .toggle {
-//     font-size: 2.3em;
-//     position: absolute;
-//     top: 20px;
-//     right: 50px;
-//     z-index: 13;
-//     transform: rotate(0deg);
-//     transition: 0.5s;
-//     &:hover {
-//       cursor: pointer;
-//     }
-//   }
-
-//   .animate {
-//     transform: rotate(180deg);
-//     transition: 0.5s;
-//   }
-
-//   .navContainer {
-//     position: absolute;
-//     left: 0;
-//     top: 0;
-//     z-index: 12;
-//     height: 100vh;
-//     width: 100vw;
-//     background-color: #c2b19c;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     padding-top: 100px;
-
-//     .headerContainer {
-//       height: auto;
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       .logoContainer {
-//         background-color: #c2b19c;
-//         position: relative;
-//         display: flex;
-//         justify-content: flex-start;
-//         align-items: flex-start;
-
-//         .camera {
-//           transform: rotate(360deg);
-//           height: 200px;
-//           width: 200px;
-//           position: absolute;
-//           top: -55px;
-//           left: -45px;
-//         }
-
-//         .text {
-//           position: absolute;
-//           top: 33px;
-//           left: 50px;
-//           width: auto;
-//           z-index: 2;
-//         }
-
-//         .magClark {
-//           font-family: "Dream Avenue";
-//           text-transform: uppercase;
-//           font-weight: 200;
-//           font-size: 1.1em;
-//           padding: 0;
-//           margin: 0;
-//           letter-spacing: 4px;
-//         }
-
-//         .photography {
-//           font-family: "Lexend Tera", sans-serif;
-//           text-transform: uppercase;
-//           font-size: 0.6em;
-//           font-weight: 100;
-//           padding: 0;
-//           margin: 0;
-//           letter-spacing: 2px;
-//         }
-//       }
-//     }
-
-//     .btnContainer {
-//       width: 100px;
-//       display: flex;
-//       flex-direction: column;
-//     }
-//     .btn {
-//       margin: 20px;
-//       border: none;
-//       background: none;
-//       font-family: "Alta";
-//       font-size: 2em;
-//       letter-spacing: 5px;
-//       transition: 0.3s ease-in-out;
-//       &:hover {
-//         cursor: pointer;
-//         transform: scale(1.1);
-//       }
-//     }
-//   }
-
-//   .hidden {
-//     display: none;
-//   }
-// }
-
-// @media (max-width: 450px) {
-//   .navbarContainer {
-//     .toggle {
-//       right: 30px;
-//     }
-//   }
-// }
-
-// @media (max-width: 992px) {
-//   .navbarContainer {
-//     .navContainer {
-//       .headerContainer {
-//         .logoContainer {
-//           .camera {
-//             height: 150px;
-//             width: 150px;
-//             top: -35px;
-//             left: -30px;
-//           }
-
-//           .text {
-//             top: 28px;
-//             left: 40px;
-//           }
-
-//           .magClark {
-//             font-size: 0.9em;
-//             letter-spacing: 3px;
-//           }
-
-//           .photography {
-//             font-size: 0.5em;
-//             letter-spacing: 1px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
 .navbarContainer {
   width: auto;
   height: auto;
@@ -155,7 +7,8 @@
 }
 
 .logoAndToggle,
-.compactNavContainer {
+.compactNavContainer,
+.hidden {
   display: none;
 }
 
@@ -163,6 +16,7 @@
   padding-right: 15px;
 
   button {
+    color: #fff;
     text-align: center;
     background: none;
     border: none;
@@ -178,7 +32,7 @@
     margin: 0 auto;
     width: 100%;
     padding-top: 5px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
   }
 }
 
@@ -189,18 +43,27 @@
 
   .logoAndToggle {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100vw;
+    padding-top: 30px;
+    transition: background-color 0.4s;
+  }
+
+  .whiteout {
+    transition: background-color 0.4s;
+    background-color: #fff;
   }
 
   .toggle {
     position: absolute;
     right: 25px;
+    top: 22px;
     font-size: 2rem;
     transition: ease-in-out;
     transform: rotate(0deg);
     transition: 0.5s;
+    color: #fff;
     &:hover {
       cursor: pointer;
     }
@@ -209,6 +72,7 @@
   .animate {
     transform: rotate(180deg);
     transition: 0.5s;
+    color: #000;
   }
 
   .navContainer {
@@ -219,28 +83,45 @@
     font-family: "Dream Avenue";
     text-transform: uppercase;
     font-weight: 200;
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 0;
     margin: 0;
     letter-spacing: 4px;
+    color: #fff;
+    padding-left: 15px;
+    transition: color 0.5s;
   }
 
   .photography {
     font-family: "Lexend Tera", sans-serif;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: 100;
     padding: 0;
     margin: 0;
     letter-spacing: 2px;
+    color: #fff;
+    padding-left: 15px;
+    transition: color 0.5s;
   }
 
-  .compactNavContainer {
+  .blackText {
+    color: #000;
+  }
+
+  .hidden {
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity;
+    -webkit-transition: 0.5s;
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
     button {
+      color: #fff;
       text-align: center;
       background: none;
       border: none;
@@ -251,17 +132,40 @@
       width: auto;
     }
 
-    .active:after {
-      content: "";
-      display: block;
-      margin: 0 auto;
-      width: 60%;
-      padding-top: 5px;
-      border-bottom: 1px solid black;
+    .active span {
+      border-bottom: 1px solid #000;
+      padding-bottom: 1px;
     }
   }
 
-  .hidden {
-    display: none;
+  .compactNavContainer {
+    opacity: 1;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity;
+    -webkit-transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 180px;
+
+    button {
+      color: #fff;
+      text-align: center;
+      background: none;
+      border: none;
+      font-family: "Alta";
+      font-size: 2em;
+      letter-spacing: 1px;
+      margin: 20px 0;
+      width: auto;
+    }
+
+    .active span {
+      border-bottom: 1px solid #000;
+      padding-bottom: 1px;
+    }
   }
 }

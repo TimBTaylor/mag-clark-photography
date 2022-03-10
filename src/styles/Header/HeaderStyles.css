@@ -31,6 +31,7 @@
   padding: 0;
   margin: 0;
   letter-spacing: 4px;
+  color: #fff;
 }
 
 .headerContainer .logoContainer .photography {
@@ -41,6 +42,7 @@
   padding: 0;
   margin: 0;
   letter-spacing: 2px;
+  color: #fff;
 }
 
 .headerContainer .title {
@@ -51,6 +53,9 @@
 }
 
 @media (max-width: 768px) {
+  .headerContainer {
+    padding: 0;
+  }
   .headerContainer .logoContainer {
     display: none;
   }

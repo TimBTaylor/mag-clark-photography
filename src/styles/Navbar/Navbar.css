@@ -13,7 +13,8 @@
 }
 
 .logoAndToggle,
-.compactNavContainer {
+.compactNavContainer,
+.hidden {
   display: none;
 }
 
@@ -22,6 +23,7 @@
 }
 
 .navContainer button {
+  color: #fff;
   text-align: center;
   background: none;
   border: none;
@@ -37,7 +39,7 @@
   margin: 0 auto;
   width: 100%;
   padding-top: 5px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 @media (max-width: 768px) {
@@ -51,17 +53,26 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     width: 100vw;
+    padding-top: 30px;
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+  }
+  .whiteout {
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+    background-color: #fff;
   }
   .toggle {
     position: absolute;
     right: 25px;
+    top: 22px;
     font-size: 2rem;
     -webkit-transition: ease-in-out;
     transition: ease-in-out;
@@ -69,6 +80,7 @@
             transform: rotate(0deg);
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    color: #fff;
   }
   .toggle:hover {
     cursor: pointer;
@@ -78,6 +90,7 @@
             transform: rotate(180deg);
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    color: #000;
   }
   .navContainer {
     display: none;
@@ -86,21 +99,37 @@
     font-family: "Dream Avenue";
     text-transform: uppercase;
     font-weight: 200;
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 0;
     margin: 0;
     letter-spacing: 4px;
+    color: #fff;
+    padding-left: 15px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
   }
   .photography {
     font-family: "Lexend Tera", sans-serif;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: 100;
     padding: 0;
     margin: 0;
     letter-spacing: 2px;
+    color: #fff;
+    padding-left: 15px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
   }
-  .compactNavContainer {
+  .blackText {
+    color: #000;
+  }
+  .hidden {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity;
+    -webkit-transition: 0.5s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -109,8 +138,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 20px;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
   }
-  .compactNavContainer button {
+  .hidden button {
+    color: #fff;
     text-align: center;
     background: none;
     border: none;
@@ -120,16 +153,43 @@
     margin: 20px 0;
     width: auto;
   }
-  .compactNavContainer .active:after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 60%;
-    padding-top: 5px;
-    border-bottom: 1px solid black;
+  .hidden .active span {
+    border-bottom: 1px solid #000;
+    padding-bottom: 1px;
   }
-  .hidden {
-    display: none;
+  .compactNavContainer {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity;
+    -webkit-transition: 0.5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 180px;
+  }
+  .compactNavContainer button {
+    color: #fff;
+    text-align: center;
+    background: none;
+    border: none;
+    font-family: "Alta";
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    width: auto;
+  }
+  .compactNavContainer .active span {
+    border-bottom: 1px solid #000;
+    padding-bottom: 1px;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */

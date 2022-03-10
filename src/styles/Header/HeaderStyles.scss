@@ -12,15 +12,6 @@
     height: auto;
     padding-left: 15px;
 
-    // .camera {
-    //   transform: rotate(360deg);
-    //   height: 200px;
-    //   width: 200px;
-    //   position: absolute;
-    //   top: -55px;
-    //   left: -45px;
-    // }
-
     .magClark {
       font-family: "Dream Avenue";
       text-transform: uppercase;
@@ -29,6 +20,7 @@
       padding: 0;
       margin: 0;
       letter-spacing: 4px;
+      color: #fff;
     }
 
     .photography {
@@ -39,6 +31,7 @@
       padding: 0;
       margin: 0;
       letter-spacing: 2px;
+      color: #fff;
     }
   }
 
@@ -52,6 +45,7 @@
 
 @media (max-width: 768px) {
   .headerContainer {
+    padding: 0;
     .logoContainer {
       display: none;
     }

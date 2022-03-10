@@ -1,0 +1,11 @@
+.homeContainer {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.headerAndImage {
+  background: url(../../images/erinAndDean.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+/*# sourceMappingURL=HomeStyles.css.map */
