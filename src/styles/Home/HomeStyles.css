@@ -1,11 +1,28 @@
 .homeContainer {
   overflow-y: auto;
   overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 .headerAndImage {
   background: url(../../images/erinAndDean.jpg) no-repeat center center;
   background-size: cover;
   height: 100vh;
+}
+
+.intro {
+  position: relative;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 0;
+  margin: 0;
+  padding: 0 15px;
+  color: #fff;
+  font-family: "Alta";
+  text-align: center;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=HomeStyles.css.map */
