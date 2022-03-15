@@ -48,7 +48,7 @@
 @media (min-width: 960px) {
   .photoCollageContainer {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, auto-flow);
+    grid-template-rows: repeat(3, 300px);
 
     .gallery-item:first-child,
     .gallery-item:nth-child(7),
@@ -68,7 +68,7 @@
   .photoCollageContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 300px);
+    grid-template-rows: repeat(3, 300px);
     grid-auto-flow: row dense;
 
     .gallery-item {

@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Home/HomeStyles.css";
 import { Header } from "../components/Header/Header";
 import { PhotoCollage } from "../components/PhotoCollage/PhotoCollage";
+import { MeetMe } from "../components/MeetMe/MeetMe";
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
         <Header title="home" />
       </div>
       <PhotoCollage />
+      <MeetMe />
     </div>
   );
 };
