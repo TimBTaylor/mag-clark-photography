@@ -6,6 +6,7 @@ export const MeetMe = () => {
   return (
     <div className="meetMeContainer">
       <div className="portraitContainer">
+        <p className="meetMe">meet me</p>
         <img
           src={maggiePortrait}
           className="maggiePortrait"

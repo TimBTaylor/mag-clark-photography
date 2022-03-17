@@ -3,6 +3,7 @@ import "../styles/Home/HomeStyles.css";
 import { Header } from "../components/Header/Header";
 import { PhotoCollage } from "../components/PhotoCollage/PhotoCollage";
 import { MeetMe } from "../components/MeetMe/MeetMe";
+import { Investment } from "../components/Investment/Investment";
 
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
       </div>
       <PhotoCollage />
       <MeetMe />
+      <Investment />
     </div>
   );
 };
