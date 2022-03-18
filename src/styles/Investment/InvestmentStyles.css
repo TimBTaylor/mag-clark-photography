@@ -1,6 +1,6 @@
 .investmentContainer {
   width: 100vw;
-  height: auto;
+  height: 100vh;
   margin: 0 0.65rem;
   display: -ms-grid;
   display: grid;
