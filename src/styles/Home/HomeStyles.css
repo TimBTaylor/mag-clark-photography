@@ -1,5 +1,5 @@
 .homeContainer {
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
@@ -24,5 +24,15 @@
   font-family: "Alta";
   text-align: center;
   letter-spacing: 2px;
+}
+
+.scrollToTop {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  z-index: 1;
+  background: none;
+  border: none;
+  font-size: 3rem;
 }
 /*# sourceMappingURL=HomeStyles.css.map */
