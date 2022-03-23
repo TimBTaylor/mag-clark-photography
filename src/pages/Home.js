@@ -11,6 +11,7 @@ export const Home = () => {
   const meetMeRef = useRef();
   const photoCollageRef = useRef();
   const investmentRef = useRef();
+  const contactRef = useRef();
 
   const handleMeetMeRef = () => {
     meetMeRef.current.scrollIntoView({ behavior: "smooth" });
@@ -24,6 +25,10 @@ export const Home = () => {
     investmentRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleContactRef = () => {
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="homeContainer">
       <h1 className="intro">capturing memories for a lifetime</h1>
@@ -32,13 +37,14 @@ export const Home = () => {
           handleMeetMeRef={handleMeetMeRef}
           handlePhotoCollageRef={handlePhotoCollageRef}
           handleInvestmentRef={handleInvestmentRef}
+          handleContactRef={handleContactRef}
         />
       </div>
       <ScrollToTop />
       <MeetMe ref={meetMeRef} />
       <PhotoCollage ref={photoCollageRef} />
       <Investment ref={investmentRef} />
-      <Contact />
+      <Contact ref={contactRef} />
     </div>
   );
 };

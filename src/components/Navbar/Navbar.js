@@ -45,16 +45,17 @@ export const Navbar = (props) => {
         >
           investment
         </button>
-        <button className={page === "contact" ? "active" : ""}>
-          <Link to="/contacy" style={{ textDecoration: "none", color: "#000" }}>
-            <span>contact</span>
-          </Link>
+        <button
+          className={page === "contact" ? "active" : ""}
+          onClick={props.handleContactRef}
+        >
+          contact
         </button>
-        <button className={page === "blog" ? "active" : ""}>
+        {/* <button className={page === "blog" ? "active" : ""}>
           <Link to="/blog" style={{ textDecoration: "none", color: "#000" }}>
             <span>blog</span>
           </Link>
-        </button>
+        </button> */}
       </div>
 
       {/* larger than 768px  */}

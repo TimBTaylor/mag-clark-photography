@@ -19,6 +19,7 @@ export const Header = (props) => {
         handleMeetMeRef={props.handleMeetMeRef}
         handlePhotoCollageRef={props.handlePhotoCollageRef}
         handleInvestmentRef={props.handleInvestmentRef}
+        handleContactRef={props.handleContactRef}
       />
     </div>
   );

@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, forwardRef } from "react";
 import "../../styles/Contact/Contact.css";
 import emailjs from "@emailjs/browser";
 import Checkmark from "../../images/accept.png";
 import Camera from "../../images/camera.svg";
 
-export const Contact = () => {
+export const Contact = forwardRef((props, ref) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -34,7 +34,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="contactContainer">
+    <div className="contactContainer" ref={ref}>
       <h1 className="contactMe">contact me</h1>
       {isSubmitted ? (
         <div className="submissionContainer">
@@ -112,4 +112,4 @@ export const Contact = () => {
       </div>
     </div>
   );
-};
+});
