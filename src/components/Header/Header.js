@@ -4,7 +4,6 @@ import "../../styles/Header/HeaderStyles.css";
 import { Navbar } from "../Navbar/Navbar";
 
 export const Header = (props) => {
-  const title = props.title;
   return (
     <div className="headerContainer">
       <div className="logoContainer">
@@ -16,7 +15,11 @@ export const Header = (props) => {
         </div>
       </div>
 
-      <Navbar page={title} />
+      <Navbar
+        handleMeetMeRef={props.handleMeetMeRef}
+        handlePhotoCollageRef={props.handlePhotoCollageRef}
+        handleInvestmentRef={props.handleInvestmentRef}
+      />
     </div>
   );
 };

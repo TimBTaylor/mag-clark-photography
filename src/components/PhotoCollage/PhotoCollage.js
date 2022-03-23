@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "../../styles/PhotoCollage/PhotoCollage.css";
 import erinAndDean from "../../images/photoCollage/erinAndDean.jpg";
 import jordanAndNick from "../../images/photoCollage/jordanAndNick.jpg";
@@ -9,9 +9,9 @@ import haleyAndWesley from "../../images/photoCollage/haleyAndWesley.jpg";
 import ryanAndKatie from "../../images/photoCollage/ryanAndKatie.jpg";
 import macyAndMckenna from "../../images/photoCollage/macyAndMckenna.jpg";
 
-export const PhotoCollage = () => {
+export const PhotoCollage = forwardRef((props, ref) => {
   return (
-    <div className="photoCollageContainer">
+    <div className="photoCollageContainer" ref={ref}>
       <div className="gallery-item">
         <img src={jordanAndNick} alt="jordanandnick" />
       </div>
@@ -38,4 +38,4 @@ export const PhotoCollage = () => {
       </div>
     </div>
   );
-};
+});

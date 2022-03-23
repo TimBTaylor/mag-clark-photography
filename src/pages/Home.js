@@ -1,33 +1,44 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../styles/Home/HomeStyles.css";
 import { Header } from "../components/Header/Header";
 import { PhotoCollage } from "../components/PhotoCollage/PhotoCollage";
 import { MeetMe } from "../components/MeetMe/MeetMe";
 import { Investment } from "../components/Investment/Investment";
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { ScrollToTop } from "../components/ScrollToTop/ScrollToTop";
+import { Contact } from "../components/Contact/Contact";
 
 export const Home = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-    console.log("clickled");
+  const meetMeRef = useRef();
+  const photoCollageRef = useRef();
+  const investmentRef = useRef();
+
+  const handleMeetMeRef = () => {
+    meetMeRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handlePhotoCollageRef = () => {
+    photoCollageRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleInvestmentRef = () => {
+    investmentRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <div className="homeContainer">
       <h1 className="intro">capturing memories for a lifetime</h1>
       <div className="headerAndImage">
-        <Header />
+        <Header
+          handleMeetMeRef={handleMeetMeRef}
+          handlePhotoCollageRef={handlePhotoCollageRef}
+          handleInvestmentRef={handleInvestmentRef}
+        />
       </div>
-      <button className="scrollToTop" onClick={scrollToTop}>
-        <BsFillArrowUpCircleFill className="arrowUp" />
-      </button>
-      <PhotoCollage />
-      <MeetMe />
-      <Investment />
+      <ScrollToTop />
+      <MeetMe ref={meetMeRef} />
+      <PhotoCollage ref={photoCollageRef} />
+      <Investment ref={investmentRef} />
+      <Contact />
     </div>
   );
 };

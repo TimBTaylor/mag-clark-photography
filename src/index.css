@@ -1,10 +1,6 @@
 body {
   margin: 0;
-  overflow: scroll;
-}
-
-html {
-  overflow: scroll;
+  scroll-behavior: scroll;
 }
 
 @font-face {

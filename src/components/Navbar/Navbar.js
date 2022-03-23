@@ -3,8 +3,9 @@ import { AiOutlineMenu } from "react-icons/ai";
 import "../../styles/Navbar/Navbar.css";
 import { Link } from "react-router-dom";
 
-export const Navbar = ({ page }) => {
+export const Navbar = (props) => {
   const [visible, setVisible] = useState(false);
+  const page = false;
   return (
     <div className="navbarContainer">
       <div className={visible ? "logoAndToggle whiteout" : "logoAndToggle"}>
@@ -26,31 +27,23 @@ export const Navbar = ({ page }) => {
 
       {/* smaller than 768px */}
       <div className={visible ? "compactNavContainer" : "hidden"}>
-        <button className={page === "home" ? "active" : ""}>
-          <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
-            <span>home</span>
-          </Link>
+        <button
+          className={page === "meetme" ? "active" : ""}
+          onClick={props.handleMeetMeRef}
+        >
+          meet me
         </button>
-        <button className={page === "meetme" ? "active" : ""}>
-          <Link to="/meetme" style={{ textDecoration: "none", color: "#000" }}>
-            <span>meet me</span>
-          </Link>
+        <button
+          className={page === "portfolio" ? "active" : ""}
+          onClick={props.handlePhotoCollageRef}
+        >
+          portfolio
         </button>
-        <button className={page === "investment" ? "active" : ""}>
-          <Link
-            to="/investment"
-            style={{ textDecoration: "none", color: "#000" }}
-          >
-            <span>investment</span>
-          </Link>
-        </button>
-        <button className={page === "portfolio" ? "active" : ""}>
-          <Link
-            to="/portfolio"
-            style={{ textDecoration: "none", color: "#000" }}
-          >
-            <span>portfolio</span>
-          </Link>
+        <button
+          className={page === "investment" ? "active" : ""}
+          onClick={props.handleInvestmentRef}
+        >
+          investment
         </button>
         <button className={page === "contact" ? "active" : ""}>
           <Link to="/contacy" style={{ textDecoration: "none", color: "#000" }}>
@@ -66,31 +59,23 @@ export const Navbar = ({ page }) => {
 
       {/* larger than 768px  */}
       <div className="navContainer">
-        <button className={page === "home" ? "active" : ""}>
-          <Link to="/" style={{ textDecoration: "none", color: "#fff" }}>
-            home
-          </Link>
+        <button
+          className={page === "meetme" ? "active" : ""}
+          onClick={props.handleMeetMeRef}
+        >
+          meet me
         </button>
-        <button className={page === "meetme" ? "active" : ""}>
-          <Link to="/meetme" style={{ textDecoration: "none", color: "#fff" }}>
-            meet me
-          </Link>
+        <button
+          className={page === "portfolio" ? "active" : ""}
+          onClick={props.handlePhotoCollageRef}
+        >
+          portfolio
         </button>
-        <button className={page === "investment" ? "active" : ""}>
-          <Link
-            to="/investment"
-            style={{ textDecoration: "none", color: "#fff" }}
-          >
-            investment
-          </Link>
-        </button>
-        <button className={page === "portfolio" ? "active" : ""}>
-          <Link
-            to="/portfolio"
-            style={{ textDecoration: "none", color: "#fff" }}
-          >
-            portfolio
-          </Link>
+        <button
+          className={page === "investment" ? "active" : ""}
+          onClick={props.handleInvestmentRef}
+        >
+          investment
         </button>
         <button className={page === "contact" ? "active" : ""}>
           <Link to="/contacy" style={{ textDecoration: "none", color: "#fff" }}>

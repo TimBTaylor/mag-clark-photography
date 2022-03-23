@@ -33,6 +33,10 @@
   margin: 0 5px;
 }
 
+.navContainer button:hover {
+  cursor: pointer;
+}
+
 .navContainer .active:after {
   content: "";
   display: block;
@@ -142,7 +146,7 @@
     z-index: 2;
   }
   .hidden button {
-    color: #fff;
+    color: #000;
     text-align: center;
     background: none;
     border: none;
@@ -152,10 +156,6 @@
     margin: 20px 0;
     width: auto;
     display: none;
-  }
-  .hidden .active span {
-    border-bottom: 1px solid #000;
-    padding-bottom: 1px;
   }
   .compactNavContainer {
     opacity: 1;
@@ -177,7 +177,7 @@
     z-index: 2;
   }
   .compactNavContainer button {
-    color: #fff;
+    color: #000;
     text-align: center;
     background: none;
     border: none;

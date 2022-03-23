@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import maggiePortrait from "../../images/maggiePortrait.webp";
 import "../../styles/MeetMe/MeetMe.css";
 
-export const MeetMe = () => {
+export const MeetMe = forwardRef((props, ref) => {
   return (
-    <div className="meetMeContainer">
+    <div className="meetMeContainer" ref={ref}>
       <div className="meetMeTextContainer">
         <p className="meetMe">meet me</p>
         <p className="meetMeText">
@@ -20,4 +20,4 @@ export const MeetMe = () => {
       </div>
     </div>
   );
-};
+});

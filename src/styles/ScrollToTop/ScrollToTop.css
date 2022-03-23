@@ -1,0 +1,19 @@
+.scrollToTop {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  float: right;
+  z-index: 10;
+  margin: 0 25px 0 0;
+}
+
+.scrollToTop .btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
+.scrollToTop .btn:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=ScrollToTop.css.map */
